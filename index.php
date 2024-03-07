@@ -12,14 +12,14 @@
             <input type="number" id= "jugadores" min="2" max="4"/>
         </p>-->
         <div id="jugadores">
-            <h2>Elige jugadores para comenzar</h2>
+            <h2 class="formTitle">Elige jugadores para comenzar</h2>
         </div>
-        <input type="submit" value="Iniciar partida!"/>
+        <input class="submitPlayer" type="submit" value="Iniciar partida!"/>
     </form>
     <script src="script.js"></script>
     <div id="botones">
-        <button id="sumarJ" onclick="addPlayer()">Añadir Jugador</button>
-        <button id="restarJ" onclick="removePlayer()" style="display: none;">Quitar Jugador</button>
+        <button class="button2" id="sumarJ" onclick="addPlayer()">Añadir Jugador</button>
+        <button class="button2" id="restarJ" onclick="removePlayer()" style="display: none;">Quitar Jugador</button>
     </div>
     <div id="formErrors">
         <?php
@@ -30,5 +30,7 @@
             }
         ?>
     </div>
+
+    
 </body>
 </html>
