@@ -17,7 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
             }else {
                 #Existe pero está vacio
-                array_push($errors,"Rellena todos los datos");
+                if(!in_array("Rellena todos los datos",$errors)){
+                    array_push($errors,"Rellena todos los datos");
+                }
             }
         }
         #No existe
