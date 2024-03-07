@@ -1,0 +1,166 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  /* Blue background color */
+}
+
+#playerForm {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  background-color: #00554f;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.5em 1.5em;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+.colorSelect {
+  max-width: 120px;
+  position: relative;
+}
+
+.colorSelect {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 35px;
+  outline: 0;
+  border: 0;
+  margin: 2px;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family:
+    'Quicksand', sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+
+.nombreInput {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  margin: 2px;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family:
+    'Quicksand', sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+}
+
+.submitPlayer {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  margin: 2px;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family:
+    'Quicksand', sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.submitPlayer:hover {
+  background: #00f815;
+  cursor: pointer;
+}
+
+.formTitle {
+  font-family:
+    'Quicksand', sans-serif;
+  background-color: #666;
+  border-radius: 12px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
