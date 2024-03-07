@@ -13,9 +13,11 @@ function addPlayer() {
     const nombre = document.createElement('input');
     const color =  document.createElement('select');
     const options = ["Amarillo", "Rojo",  "Verde",  "Azul"];
-    nombre.dataset.type = 'text';
-    nombre.dataset.id = 'nombre' + numJ;
-    color.dataset.id = 'color' + numJ;
+    nombre.type = 'text';
+    nombre.id = 'nombre' + numJ;
+    nombre.name = 'nombre' + numJ;
+    color.id = 'color' + numJ;
+    color.name = 'color' + numJ;
     playerDiv.appendChild(nombre);
 
     options.forEach((element, key) => {
