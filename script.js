@@ -1,12 +1,10 @@
-const listaJ = /** @type {HTMLElement} */
-  (document.querySelector('#jugadores'));
-const btnSumar = /** @type {HTMLButtonElement} */
-  (document.querySelector('#sumarJ'));
-const btnRestar = /** @type {HTMLButtonElement} */
-  (document.querySelector('#restarJ'));
+const listaJ =document.querySelector('#jugadores');
+const btnSumar = document.querySelector('#sumarJ');
+const btnRestar = document.querySelector('#restarJ');
 const MAX_JUGADORES = 4;
 const MIN_JUGADORES = 2;
 let numJ;
+
 function addPlayer() {
     numJ++;
     const playerDiv = document.createElement('div');
@@ -30,8 +28,7 @@ function addPlayer() {
 }
 
 function removePlayer() {
-    const eliminado = /** @type {HTMLElement} */
-      (document.getElementById(numJ));
+    const eliminado = document.getElementById(numJ);
     eliminado.remove();
     numJ--;
     actualizaBotones(numJ);
