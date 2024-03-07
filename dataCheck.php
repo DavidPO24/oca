@@ -5,9 +5,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $colores = [];
     $errors = [];
     for ($i=1; $i < 4; $i++) { 
-        if (isset($_POST['nombre'+$i]) && isset($_POST['color'+$i])) {
-            $nombreJ = trim(htmlspecialchars($_POST['nombre'+$i]));
-            $colorJ = trim(htmlspecialchars($_POST['color'+$i]));
+        if (isset($_POST['nombre'.$i]) && isset($_POST['color'.$i])) {
+            $nombreJ = trim(htmlspecialchars($_POST['nombre'.$i]));
+            $colorJ = trim(htmlspecialchars($_POST['color'.$i]));
             if(!empty($nombreJ) && !empty($colorJ)) {
                 if(!in_array($colorJ,$colores)){
                     array_push($colores,$colorJ);
