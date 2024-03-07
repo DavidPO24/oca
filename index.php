@@ -21,5 +21,14 @@
         <button id="sumarJ" onclick="addPlayer()">Añadir Jugador</button>
         <button id="restarJ" onclick="removePlayer()" style="display: none;">Quitar Jugador</button>
     </div>
+    <div id="formErrors">
+        <?php
+            if (!empty($errors)) {
+                foreach ($errors as $error){
+                    echo "<p class='error'>".$error."</p>";
+                }
+            }
+        ?>
+    </div>
 </body>
 </html>
