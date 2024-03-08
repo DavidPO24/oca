@@ -16,8 +16,10 @@ function addPlayer() {
     nombre.type = 'text';
     nombre.id = 'nombre' + numJ;
     nombre.name = 'nombre' + numJ;
+    nombre.classList.add('nombreInput');
     color.id = 'color' + numJ;
     color.name = 'color' + numJ;
+    color.classList.add('colorSelect');
     playerDiv.appendChild(nombre);
 
     options.forEach((element, key) => {
