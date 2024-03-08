@@ -1,5 +1,5 @@
 <?php
-    //require_once('color.php');
+    require_once __DIR__."/color.php";
     class Jugador{
         
         private $name;
@@ -10,7 +10,7 @@
 
         public function __construct($nombre, $color){
             $this->name = $nombre;
-            $this->color = $color;
+            $this->color = Color::getColorEnum($color);
             $this->pos = 0;
 
             /*$dsn = "mysql:host=".DB_HOST.";dbname=".DB_BBDD.";charset=utf8";

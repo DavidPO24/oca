@@ -5,7 +5,7 @@
         case Amarillo;
         case Verde;
 
-        public function getRGB($color){
+        public static function getRGB($color){
             return match($color){
                 Color::Rojo => "#FF0000",
                 Color::Verde => "#00FF00",
@@ -14,7 +14,7 @@
            };
         }
 
-        public function getString($color){   
+        public static function getString($color){   
             return match($color){
                 Color::Rojo => "Rojo",
                 Color::Verde => "Verde",
@@ -23,7 +23,7 @@
            };
         }
 
-        public function getColorEnum($color){   
+        public static function getColorEnum($color){   
             return match($color){
                 "Rojo"=> Color::Rojo,
                 "Verde"=> Color::Verde,

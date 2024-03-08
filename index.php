@@ -7,10 +7,7 @@
     <?php require_once __DIR__."/dataCheck.php"; ?>
 </head>
 <body>
-    <form action="<?= $_SERVER['PHP_SELF']?>" id="playerForm" method="post">
-        <!--<p>N&uacute;mero de jugadores: 
-            <input type="number" id= "jugadores" min="2" max="4"/>
-        </p>-->
+    <form action="<?= htmlspecialchars($_SERVER['PHP_SELF'])?>" id="playerForm" method="post">
         <div id="jugadores">
             <h2 class="formTitle">Elige jugadores para comenzar</h2>
         </div>
@@ -30,7 +27,5 @@
             }
         ?>
     </div>
-
-    
 </body>
 </html>
